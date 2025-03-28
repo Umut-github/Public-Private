@@ -8,16 +8,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Install Node.js
+
+      - name: Debug file structure
+        run: |
+          echo "Mevcut dizin: $(pwd)"
+          ls -la
+          echo "Firebase.json içeriği:"
+          cat firebase.json || echo "firebase.json bulunamadı!"
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          
+          node-version: '18'
+
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-          
+        run: npm install -g firebase-tools@latest
+
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting --non-interactive
+        run: |
+          cd $GITHUB_WORKSPACE  # Kök dizine kesin olarak git
+          firebase deploy --only hosting --non-interactive --debug
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
