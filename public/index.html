@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emisyon Veri Takip Sistemi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .form-section {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0d6efd;
+        }
+        .form-section h5 {
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+        #kayitListesi .list-group-item {
+            transition: all 0.3s;
+        }
+        #kayitListesi .list-group-item:hover {
+            background-color: #f1f8ff;
+        }
+        .required-field::after {
+            content: " *";
+            color: red;
+        }
+        #loginContainer, #productsContainer, #facilitiesContainer {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        #periodProductionTotal {
+            color: #0d6efd;
+        }
+        /* Düzenleme ve silme butonları için stil */
+        .edit-btn, .delete-btn {
+            margin: 0 2px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        .edit-btn:hover {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        .delete-btn:hover {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        .action-buttons {
+            white-space: nowrap;
+        }
+        /* Ürünler tablosu genişliği */
+        #productListContainer .table {
+            width: 100%;
+        }
+        /* Tesis bilgileri kartı */
+        .facility-info-card {
+            margin-bottom: 20px;
+        }
+        .facility-info-value {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-activity"></i> Emisyon Takip</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="facilitiesLink"><i class="bi bi-building"></i> Tesis Bilgileri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="appLink"><i class="bi bi-clipboard-data"></i> Emisyon Kayıt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="productsLink"><i class="bi bi-box-seam"></i> Ürünler</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><span class="dropdown-item disabled" id="userEmail"></span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn"><i class="bi bi-box-arrow-right"></i> Çıkış Yap</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Giriş Formu -->
+    <div id="loginContainer" class="container">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <i class="bi bi-lock"></i> Giriş Yap
+            </div>
+            <div class="card-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label class="form-label">E-posta</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Şifre</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-box-arrow-in-right"></i> Giriş Yap
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tesis Bilgileri -->
+    <div id="facilitiesContainer" class="container py-3" style="display: none;">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="text-primary"><i class="bi bi-building"></i> Tesis Bilgileri</h2>
+                <p class="text-muted">Yetkili olduğunuz tesislerin bilgileri</p>
+            </div>
+        </div>
+
+        <div id="facilitiesList">
+            <!-- Tesis bilgileri buraya yüklenecek -->
+        </div>
+    </div>
+
+    <!-- Emisyon Kayıt Formu -->
+    <div id="appContainer" class="container py-3" style="display: none;">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="text-primary"><i class="bi bi-activity"></i> Emisyon Veri Giriş Formu</h2>
+                <p class="text-muted">CN koduna göre otomatik default değer yükleme</p>
+            </div>
+        </div>
+
+        <div class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <i class="bi bi-pencil-square"></i> Yeni Kayıt
+            </div>
+            <div class="card-body">
+                <form id="veriForm">
+                    <!-- 1. Bölüm: Tesis ve CN Kodları -->
+                    <div class="form-section">
+                        <h5><i class="bi bi-building"></i> Tesis ve CN Kod Bilgileri</h5>
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label class="form-label required-field">Tesis</label>
+                                <select class="form-select" id="facilitySelect" required>
+                                    <option value="">Tesis seçiniz</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Raporlama Dönemi Başlangıç</label>
+                                <input type="date" class="form-control" id="reportingPeriodStart" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Raporlama Dönemi Bitiş</label>
+                                <input type="date" class="form-control" id="reportingPeriodEnd" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Hammadde CN Kodu</label>
+                                <select class="form-select" id="cnCode" required>
+                                    <option value="">Seçiniz</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Kullanıldığı Ürün CN Kodu</label>
+                                <select class="form-select" id="kullanildigiUrunKodu" required disabled>
+                                    <option value="">Önce raporlama dönemi seçiniz</option>
+                                </select>
+                                <div class="mt-2">
+                                    <small class="text-muted">
+                                        <span id="selectedProductInfo"></span>
+                                        <span id="periodProductionTotal" class="fw-bold"></span>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Üretilen Ülke</label>
+                                <input type="text" class="form-control" id="producedCountry" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Üretilen Tesis</label>
+                                <input type="text" class="form-control" id="producedFacility" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Bölüm: Temel Bilgiler -->
+                    <div class="form-section">
+                        <h5><i class="bi bi-card-text"></i> Temel Bilgiler</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Precursor Adı</label>
+                                <input type="text" class="form-control" id="precursorAdi" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label required-field">Kullanım Tarihi</label>
+                                <input type="date" class="form-control" id="kullanimTarihi" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label required-field">Miktar (ton)</label>
+                                <input type="number" step="0.001" class="form-control" id="kullanilanMiktar" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Bölüm: Default Değerler -->
+                    <div class="form-section">
+                        <h5><i class="bi bi-database"></i> Default Değerler</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Direct SEE (tCO₂e/t)</label>
+                                <input type="number" step="0.0001" class="form-control" id="defaultSEEDirect" readonly>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Indirect SEE (tCO₂e/t)</label>
+                                <input type="number" step="0.0001" class="form-control" id="defaultSEEIndirect" readonly>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Kaynak</label>
+                                <input type="text" class="form-control" id="defaultDegerKaynak" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Bölüm: Gerçek Değerler -->
+                    <div class="form-section">
+                        <h5><i class="bi bi-clipboard2-data"></i> Gerçek Değerler (Opsiyonel)</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Gerçek Direct SEE</label>
+                                <div class="input-group">
+                                    <input type="number" step="0.0001" class="form-control" id="gercekSEEDirect" placeholder="Boş bırakılırsa default kullanılır">
+                                    <span class="input-group-text">tCO₂e/t</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Gerçek Indirect SEE</label>
+                                <div class="input-group">
+                                    <input type="number" step="0.0001" class="form-control" id="gercekSEEIndirect" placeholder="Boş bırakılırsa default kullanılır">
+                                    <span class="input-group-text">tCO₂e/t</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kayıt Butonu -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-save"></i> Kaydet
+                        </button>
+                        <button type="button" id="cancelEditBtn" class="btn btn-secondary btn-lg ms-2" style="display: none;">
+                            <i class="bi bi-x-circle"></i> İptal
+                        </button>
+                    </div>
+                    <input type="hidden" id="editingMaterialId" value="">
+                </form>
+            </div>
+        </div>
+
+        <!-- Son Kayıtlar -->
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <i class="bi bi-list-ul"></i> Son 5 Kayıt
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tarih</th>
+                                <th>Tesis</th>
+                                <th>Hammadde CN</th>
+                                <th>Ürün CN</th>
+                                <th>Precursor</th>
+                                <th>Miktar</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody id="kayitListesi">
+                            <!-- JS ile doldurulacak -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ürün Yönetimi -->
+    <div id="productsContainer" class="container py-3" style="display: none;">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="text-primary"><i class="bi bi-box-seam"></i> Ürün Yönetimi</h2>
+                <p class="text-muted">Üretilen ürünlerin kaydı ve takibi</p>
+            </div>
+        </div>
+
+        <div class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <i class="bi bi-plus-circle"></i> Yeni Ürün Ekle
+            </div>
+            <div class="card-body">
+                <form id="productForm">
+                    <div class="form-section">
+                        <h5><i class="bi bi-box-seam"></i> Ürün Bilgileri</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Ürün CN Kodu</label>
+                                <select class="form-select" id="productCnCode" required>
+                                    <option value="">Seçiniz</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Ürün Adı</label>
+                                <input type="text" class="form-control" id="productName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Üretim Miktarı (ton)</label>
+                                <input type="number" step="0.001" class="form-control" id="productionAmount" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label required-field">Üretim Tarihi</label>
+                                <input type="date" class="form-control" id="productionDate" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-save"></i> Kaydet
+                        </button>
+                        <button type="button" id="cancelEditProductBtn" class="btn btn-secondary btn-lg ms-2" style="display: none;">
+                            <i class="bi bi-x-circle"></i> İptal
+                        </button>
+                    </div>
+                    <input type="hidden" id="editingProductId" value="">
+                </form>
+            </div>
+        </div>
+
+        <!-- Son Ürün Kayıtları -->
+        <div class="card shadow" id="productListContainer">
+            <div class="card-header bg-success text-white">
+                <i class="bi bi-list-ul"></i> Son 10 Ürün Kaydı
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tarih</th>
+                                <th>Tesis</th>
+                                <th>Ürün CN</th>
+                                <th>Ürün Adı</th>
+                                <th>Miktar (ton)</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productList">
+                            <!-- JS ile doldurulacak -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase JS -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    
+    <!-- Config Dosyası -->
+    <script src="firebase-config.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Uygulama Kodları -->
+    <script>
+        // Kullanıcı ve tesis bilgilerini saklamak için
+let currentUser = null;
+let userFacilities = [];
+let facilitiesCache = {};
+let currentView = 'app'; // 'app', 'products' veya 'facilities'
+let lastSelectedFacility = null;
+// CN Kodlarını cache'leme fonksiyonu
+async function loadCnCodesCache() {
+    try {
+        // 1. Önce localStorage'dan cache'i kontrol et
+        const cachedData = localStorage.getItem('cnCodesCache');
+        const cachedTime = localStorage.getItem('cnCodesCacheTime');
+        
+        // 2. Eğer cache varsa ve zaman aşımına uğramamışsa kullan
+        if (cachedData && cachedTime) {
+            const hoursDiff = (new Date() - new Date(cachedTime)) / (1000 * 60 * 60);
+            if (hoursDiff < CACHE_EXPIRY_HOURS) {
+                cnCodesCache = JSON.parse(cachedData);
+                lastCacheUpdate = new Date(cachedTime);
+                console.log('CN Kodları localStorage cache\'den yüklendi');
+                return;
+            }
+        }
+        
+        // 3. Cache yoksa veya zaman aşımına uğramışsa JSON dosyasından yükle
+        console.log('CN Kodları JSON dosyasından yükleniyor...');
+        const response = await fetch('/cnCodes.json');
+        
+        if (!response.ok) {
+            throw new Error('JSON dosyası yüklenemedi');
+        }
+        
+        cnCodesCache = await response.json();
+        
+        // 4. Yeni verileri cache'e kaydet
+        lastCacheUpdate = new Date();
+        localStorage.setItem('cnCodesCache', JSON.stringify(cnCodesCache));
+        localStorage.setItem('cnCodesCacheTime', lastCacheUpdate.toISOString());
+        
+        console.log('CN Kodları JSON dosyasından yüklendi ve cache\'lendi');
+    } catch (error) {
+        console.error('CN Kodları yüklenirken hata:', error);
+        
+        // 5. Eğer JSON yükleme başarısız olursa ve cache varsa onu kullan
+        const cachedData = localStorage.getItem('cnCodesCache');
+        if (cachedData) {
+            cnCodesCache = JSON.parse(cachedData);
+            console.warn('JSON yükleme başarısız, eski cache kullanılıyor');
+        } else {
+            // 6. Hiç veri yoksa kullanıcıyı uyar
+            alert('CN Kod verileri yüklenemedi. Lütfen sayfayı yenileyin veya daha sonra tekrar deneyin.');
+        }
+    }
+}
+// CN Kodları için cache
+let cnCodesCache = {};
+let lastCacheUpdate = null;
+const CACHE_EXPIRY_HOURS = 24 * 30; // 1 aylık cache
+        
+        // Sayfa yüklendiğinde
+        document.addEventListener('DOMContentLoaded', () => {
+            // Auth state listener
+firebase.auth().onAuthStateChanged(async (user) => {
+    if (user) {
+        currentUser = user;
+        document.getElementById('userEmail').textContent = user.email;
+        await loadCnCodesCache(); // Önce CN kodlarını cache'le
+        await loadUserFacilities();
+        showAppView();
+    } else {
+        showLoginForm();
+    }
+});
+            
+            // Giriş formu
+            document.getElementById('loginForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                
+                try {
+                    await firebase.auth().signInWithEmailAndPassword(email, password);
+                } catch (error) {
+                    alert(`Giriş hatası: ${error.message}`);
+                }
+            });
+            
+            // Çıkış butonu
+            document.getElementById('logoutBtn').addEventListener('click', (e) => {
+                e.preventDefault();
+                firebase.auth().signOut();
+            });
+            
+            // Navigasyon linkleri
+            document.getElementById('appLink').addEventListener('click', (e) => {
+                e.preventDefault();
+                showAppView();
+            });
+            
+            document.getElementById('productsLink').addEventListener('click', (e) => {
+                e.preventDefault();
+                showProductsView();
+            });
+            
+            document.getElementById('facilitiesLink').addEventListener('click', (e) => {
+                e.preventDefault();
+                showFacilitiesView();
+            });
+            
+            // CN Kod değiştiğinde default değerleri yükle (cache'den)
+document.getElementById('cnCode').addEventListener('change', async (e) => {
+    const cnCode = e.target.value;
+    if (!cnCode) return;
+    
+    // Cache'den veriyi al
+    const data = cnCodesCache[cnCode];
+    if (data) {
+        document.getElementById('defaultSEEDirect').value = data.defaultSEEDirect || '';
+        document.getElementById('defaultSEEIndirect').value = data.defaultSEEIndirect || '';
+        document.getElementById('defaultDegerKaynak').value = data.kaynak || "JSON Dosyası";
+    } else {
+        alert("Bu CN Kodu için default değer bulunamadı!");
+        document.getElementById('defaultSEEDirect').value = '';
+        document.getElementById('defaultSEEIndirect').value = '';
+        document.getElementById('defaultDegerKaynak').value = '';
+    }
+});
+            
+            // Tesis ve raporlama dönemi değişiklikleri
+            document.getElementById('facilitySelect').addEventListener('change', async (e) => {
+                if (e.target.value) {
+                    lastSelectedFacility = e.target.value;
+                    await updateProductCnCodesBasedOnPeriod();
+                    loadLastRecords(e.target.value);
+                    if (currentView === 'products') {
+                        loadProducts(e.target.value);
+                    }
+                }
+            });
+            
+            document.getElementById('reportingPeriodStart').addEventListener('change', updateProductCnCodesBasedOnPeriod);
+            document.getElementById('reportingPeriodEnd').addEventListener('change', updateProductCnCodesBasedOnPeriod);
+            
+            // Ürün CN kodu seçimi
+            document.getElementById('kullanildigiUrunKodu').addEventListener('change', loadProductionTotalForSelectedProduct);
+            
+            // Ürün formu gönderimi
+            document.getElementById('productForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const editingId = document.getElementById('editingProductId').value;
+                if (editingId) {
+                    await updateProduct(editingId);
+                } else {
+                    await saveProduct();
+                }
+            });
+            
+            // Emisyon formu gönderimi
+            document.getElementById('veriForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const editingId = document.getElementById('editingMaterialId').value;
+                if (editingId) {
+                    await updateMaterial(editingId);
+                } else {
+                    await saveMaterial();
+                }
+            });
+            
+            // Düzenleme iptal butonları
+            document.getElementById('cancelEditBtn').addEventListener('click', cancelEdit);
+            document.getElementById('cancelEditProductBtn').addEventListener('click', cancelEditProduct);
+            
+            // Varsayılan tarihleri ayarla
+            const endDate = new Date();
+            const startDate = new Date();
+            startDate.setMonth(startDate.getMonth() - 3);
+            
+            document.getElementById('reportingPeriodStart').valueAsDate = startDate;
+            document.getElementById('reportingPeriodEnd').valueAsDate = endDate;
+            document.getElementById('kullanimTarihi').valueAsDate = new Date();
+            document.getElementById('productionDate').valueAsDate = new Date();
+            
+            // Hammadde CN kodlarını yükle
+            loadMaterialCnCodes();
+        });
+        
+        // Kullanıcının yetkili olduğu tesisleri yükle
+        async function loadUserFacilities() {
+            try {
+                const userDoc = await firebase.firestore().collection('users').doc(currentUser.uid).get();
+                if (userDoc.exists) {
+                    userFacilities = userDoc.data().facilities || [];
+                    console.log("Kullanıcı tesisleri:", userFacilities);
+                    await cacheFacilities();
+                    
+                    // Tesis seçimini yap
+                    const facilitySelect = document.getElementById('facilitySelect');
+                    if (userFacilities.length === 1) {
+                        // Tek tesis varsa otomatik seç
+                        facilitySelect.value = userFacilities[0];
+                        lastSelectedFacility = userFacilities[0];
+                    } else if (lastSelectedFacility && userFacilities.includes(lastSelectedFacility)) {
+                        // Daha önce seçilmiş ve hala erişimi olan bir tesis varsa onu seç
+                        facilitySelect.value = lastSelectedFacility;
+                    }
+                    
+                    // Tesis değişikliğini tetikle
+                    if (facilitySelect.value) {
+                        const event = new Event('change');
+                        facilitySelect.dispatchEvent(event);
+                    }
+                } else {
+                    alert("Kullanıcı kaydı bulunamadı! Lütfen yöneticinizle iletişime geçin.");
+                    firebase.auth().signOut();
+                }
+            } catch (error) {
+                console.error("Tesis bilgisi yükleme hatası:", error);
+                alert("Tesis bilgileri yüklenirken hata oluştu!");
+            }
+        }
+        
+        // Tesis bilgilerini önbelleğe al
+        async function cacheFacilities() {
+            try {
+                const promises = userFacilities.map(async facilityId => {
+                    const doc = await firebase.firestore().collection('facilities').doc(facilityId).get();
+                    if (doc.exists) {
+                        facilitiesCache[facilityId] = doc.data();
+                    }
+                });
+                
+                await Promise.all(promises);
+                console.log("Tesis önbelleği:", facilitiesCache);
+                
+                // Tesis seçim dropdown'ını doldur
+                const facilitySelect = document.getElementById('facilitySelect');
+                facilitySelect.innerHTML = '<option value="">Tesis seçiniz</option>';
+                
+                userFacilities.forEach(facilityId => {
+                    const facility = facilitiesCache[facilityId];
+                    if (facility) {
+                        const option = document.createElement('option');
+                        option.value = facilityId;
+                        option.textContent = facility.name || facilityId;
+                        facilitySelect.appendChild(option);
+                    }
+                });
+                
+                // Tesis bilgilerini yükle
+                loadFacilitiesInfo();
+            } catch (error) {
+                console.error("Tesis önbellekleme hatası:", error);
+            }
+        }
+        
+        // Tesis bilgilerini yükle
+        async function loadFacilitiesInfo() {
+            const facilitiesList = document.getElementById('facilitiesList');
+            facilitiesList.innerHTML = '';
+            
+            if (userFacilities.length === 0) {
+                facilitiesList.innerHTML = '<div class="alert alert-info">Yetkili olduğunuz tesis bulunamadı.</div>';
+                return;
+            }
+            
+            for (const facilityId of userFacilities) {
+                const facility = facilitiesCache[facilityId];
+                if (!facility) continue;
+                
+                const card = document.createElement('div');
+                card.className = 'card facility-info-card mb-3';
+                card.innerHTML = `
+                    <div class="card-header bg-primary text-white">
+                        <i class="bi bi-building"></i> ${facility.name || facilityId}
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Adres:</strong> <span class="facility-info-value">${facility.address || 'Belirtilmemiş'}</span></p>
+                                <p><strong>Ülke:</strong> <span class="facility-info-value">${facility.country || 'Belirtilmemiş'}</span></p>
+                                <p><strong>Şehir:</strong> <span class="facility-info-value">${facility.city || 'Belirtilmemiş'}</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Telefon:</strong> <span class="facility-info-value">${facility.phone || 'Belirtilmemiş'}</span></p>
+                                <p><strong>Email:</strong> <span class="facility-info-value">${facility.email || 'Belirtilmemiş'}</span></p>
+                                <p><strong>Yetkili Kişi:</strong> <span class="facility-info-value">${facility.contactPerson || 'Belirtilmemiş'}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                facilitiesList.appendChild(card);
+            }
+        }
+        
+        // Hammadde CN kodlarını yükle (cache'den)
+async function loadMaterialCnCodes() {
+    try {
+        const select = document.getElementById('cnCode');
+        select.innerHTML = '<option value="">Seçiniz</option>';
+        
+        // Cache'den verileri al ve dropdown'ı doldur
+        for (const [code, data] of Object.entries(cnCodesCache)) {
+            const option = document.createElement('option');
+            option.value = code;
+            option.textContent = `${code} - ${data.name || 'İsimsiz'}`;
+            select.appendChild(option);
+        }
+    } catch (error) {
+        console.error("Hammadde CN Kod yükleme hatası:", error);
+        document.getElementById('cnCode').innerHTML = '<option value="">CN Kodları yüklenemedi</option>';
+    }
+}
+        
+        // Raporlama dönemine göre ürün CN kodlarını yükle
+        async function updateProductCnCodesBasedOnPeriod() {
+            const facilityId = document.getElementById('facilitySelect').value;
+            const startDate = document.getElementById('reportingPeriodStart').value;
+            const endDate = document.getElementById('reportingPeriodEnd').value;
+            
+            if (!facilityId || !startDate || !endDate) {
+                document.getElementById('kullanildigiUrunKodu').innerHTML = '<option value="">Önce tesis ve raporlama dönemini seçiniz</option>';
+                document.getElementById('kullanildigiUrunKodu').disabled = true;
+                document.getElementById('selectedProductInfo').textContent = '';
+                document.getElementById('periodProductionTotal').textContent = '';
+                return;
+            }
+            
+            if (new Date(startDate) > new Date(endDate)) {
+                alert("Başlangıç tarihi bitiş tarihinden büyük olamaz!");
+                return;
+            }
+            
+            try {
+                const startTimestamp = firebase.firestore.Timestamp.fromDate(new Date(startDate));
+                const endTimestamp = firebase.firestore.Timestamp.fromDate(new Date(endDate));
+                
+                const snapshot = await firebase.firestore()
+                    .collection('products')
+                    .where('facilityId', '==', facilityId)
+                    .where('productionDate', '>=', startTimestamp)
+                    .where('productionDate', '<=', endTimestamp)
+                    .get();
+                
+                const productsMap = new Map();
+                
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    if (!productsMap.has(data.cnCode)) {
+                        productsMap.set(data.cnCode, {
+                            name: data.productName || 'İsimsiz',
+                            total: 0
+                        });
+                    }
+                    productsMap.get(data.cnCode).total += data.productionAmount || 0;
+                });
+                
+                const select = document.getElementById('kullanildigiUrunKodu');
+                select.innerHTML = '<option value="">Seçiniz</option>';
+                
+                if (productsMap.size === 0) {
+                    select.innerHTML = '<option value="">Bu dönemde ürün bulunamadı</option>';
+                } else {
+                    productsMap.forEach((info, code) => {
+                        const option = document.createElement('option');
+                        option.value = code;
+                        option.textContent = `${code} - ${info.name} (${info.total.toFixed(3)} ton)`;
+                        select.appendChild(option);
+                    });
+                }
+                
+                select.disabled = false;
+            } catch (error) {
+                console.error("Ürün CN Kod yükleme hatası:", error);
+                document.getElementById('kullanildigiUrunKodu').innerHTML = '<option value="">Ürünler yüklenirken hata oluştu</option>';
+            }
+        }
+        
+        // Seçilen ürünün dönem üretim miktarını göster
+        async function loadProductionTotalForSelectedProduct() {
+            const facilityId = document.getElementById('facilitySelect').value;
+            const cnCode = document.getElementById('kullanildigiUrunKodu').value;
+            const startDate = document.getElementById('reportingPeriodStart').value;
+            const endDate = document.getElementById('reportingPeriodEnd').value;
+            
+            if (!cnCode) {
+                document.getElementById('selectedProductInfo').textContent = '';
+                document.getElementById('periodProductionTotal').textContent = '';
+                return;
+            }
+            
+            try {
+                const startTimestamp = firebase.firestore.Timestamp.fromDate(new Date(startDate));
+                const endTimestamp = firebase.firestore.Timestamp.fromDate(new Date(endDate));
+                
+                const snapshot = await firebase.firestore()
+                    .collection('products')
+                    .where('facilityId', '==', facilityId)
+                    .where('cnCode', '==', cnCode)
+                    .where('productionDate', '>=', startTimestamp)
+                    .where('productionDate', '<=', endTimestamp)
+                    .get();
+                
+                let totalAmount = 0;
+                let productName = '';
+                
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    totalAmount += data.productionAmount || 0;
+                    if (!productName && data.productName) {
+                        productName = data.productName;
+                    }
+                });
+                
+                document.getElementById('selectedProductInfo').textContent = productName ? `${productName} - ` : '';
+                document.getElementById('periodProductionTotal').textContent = `Dönem Üretimi: ${totalAmount.toFixed(3)} ton`;
+            } catch (error) {
+                console.error("Üretim miktarı hesaplama hatası:", error);
+                document.getElementById('periodProductionTotal').textContent = 'Hata oluştu!';
+            }
+        }
+        
+        // Ürün CN kodlarını yükle (ürün formu için - cache'den)
+async function loadProductCnCodes() {
+    try {
+        const select = document.getElementById('productCnCode');
+        select.innerHTML = '<option value="">Seçiniz</option>';
+        
+        // Cache'den verileri al ve dropdown'ı doldur
+        for (const [code, data] of Object.entries(cnCodesCache)) {
+            const option = document.createElement('option');
+            option.value = code;
+            option.textContent = `${code} - ${data.name || 'İsimsiz'}`;
+            select.appendChild(option);
+        }
+    } catch (error) {
+        console.error("CN Kod yükleme hatası:", error);
+        document.getElementById('productCnCode').innerHTML = '<option value="">CN Kodları yüklenemedi</option>';
+    }
+}
+        
+        // Ürün kaydet
+        async function saveProduct() {
+            const selectedFacility = document.getElementById('facilitySelect').value;
+            if (!selectedFacility) {
+                alert("Lütfen bir tesis seçiniz!");
+                return;
+            }
+            
+            try {
+                const productData = {
+                    facilityId: selectedFacility,
+                    facilityName: facilitiesCache[selectedFacility]?.name || selectedFacility,
+                    cnCode: document.getElementById('productCnCode').value,
+                    productName: document.getElementById('productName').value,
+                    productionAmount: parseFloat(document.getElementById('productionAmount').value),
+                    productionDate: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('productionDate').value)
+                    ),
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                    createdBy: currentUser.email
+                };
+                
+                await firebase.firestore().collection('products').add(productData);
+                alert("Ürün başarıyla kaydedildi!");
+                document.getElementById('productForm').reset();
+                document.getElementById('productionDate').valueAsDate = new Date();
+                loadProducts(selectedFacility);
+            } catch (error) {
+                console.error("Ürün kaydetme hatası:", error);
+                alert(`Hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Emisyon kaydı kaydet
+        async function saveMaterial() {
+            const selectedFacility = document.getElementById('facilitySelect').value;
+            if (!selectedFacility) {
+                alert("Lütfen bir tesis seçiniz!");
+                return;
+            }
+            
+            try {
+                const veri = {
+                    facilityId: selectedFacility,
+                    facilityName: facilitiesCache[selectedFacility]?.name || selectedFacility,
+                    cnCode: document.getElementById('cnCode').value,
+                    kullanildigiUrunKodu: document.getElementById('kullanildigiUrunKodu').value,
+                    precursorAdi: document.getElementById('precursorAdi').value,
+                    kullanimTarihi: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('kullanimTarihi').value)
+                    ),
+                    kullanilanMiktar: parseFloat(document.getElementById('kullanilanMiktar').value),
+                    defaultSEEDirect: parseFloat(document.getElementById('defaultSEEDirect').value) || 0,
+                    defaultSEEIndirect: parseFloat(document.getElementById('defaultSEEIndirect').value) || 0,
+                    gercekSEEDirect: document.getElementById('gercekSEEDirect').value 
+                        ? parseFloat(document.getElementById('gercekSEEDirect').value) 
+                        : null,
+                    gercekSEEIndirect: document.getElementById('gercekSEEIndirect').value 
+                        ? parseFloat(document.getElementById('gercekSEEIndirect').value) 
+                        : null,
+                    reportingPeriodStart: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('reportingPeriodStart').value)
+                    ),
+                    reportingPeriodEnd: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('reportingPeriodEnd').value)
+                    ),
+                    producedCountry: document.getElementById('producedCountry').value,
+                    producedFacility: document.getElementById('producedFacility').value,
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                    createdBy: currentUser.email
+                };
+                
+                const docRef = await firebase.firestore().collection('materials').add(veri);
+                alert(`Kayıt başarıyla oluşturuldu!\nBelge ID: ${docRef.id}`);
+                document.getElementById('veriForm').reset();
+                
+                // Default değerleri ve tarihleri sıfırla
+                document.getElementById('defaultSEEDirect').value = '';
+                document.getElementById('defaultSEEIndirect').value = '';
+                document.getElementById('defaultDegerKaynak').value = '';
+                document.getElementById('kullanimTarihi').valueAsDate = new Date();
+                document.getElementById('reportingPeriodStart').valueAsDate = new Date(new Date().setMonth(new Date().getMonth() - 3));
+                document.getElementById('reportingPeriodEnd').valueAsDate = new Date();
+                
+                // Listeyi yenile
+                loadLastRecords(selectedFacility);
+            } catch (error) {
+                console.error("Kayıt hatası:", error);
+                alert(`Hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Son kayıtları yükle
+        async function loadLastRecords(facilityId) {
+            try {
+                const snapshot = await firebase.firestore()
+                    .collection('materials')
+                    .where('facilityId', '==', facilityId)
+                    .orderBy('createdAt', 'desc')
+                    .limit(5)
+                    .get();
+                
+                let html = '';
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const tarih = data.kullanimTarihi?.toDate 
+                        ? data.kullanimTarihi.toDate().toLocaleDateString('tr-TR') 
+                        : 'Tarih yok';
+                    
+                    html += `
+                        <tr data-id="${doc.id}">
+                            <td>${tarih}</td>
+                            <td>${data.facilityName || data.facilityId}</td>
+                            <td>${data.cnCode || ''}</td>
+                            <td>${data.kullanildigiUrunKodu || ''}</td>
+                            <td>${data.precursorAdi || ''}</td>
+                            <td>${data.kullanilanMiktar || '0'} ton</td>
+                            <td class="action-buttons">
+                                <button class="btn btn-sm btn-warning edit-btn" data-id="${doc.id}">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger delete-btn" data-id="${doc.id}">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    `;
+                });
+                
+                document.getElementById('kayitListesi').innerHTML = html || 
+                    `<tr><td colspan="7" class="text-center">Henüz kayıt bulunamadı</td></tr>`;
+                
+                // Silme butonlarına event listener ekle
+                document.querySelectorAll('.delete-btn').forEach(btn => {
+                    btn.addEventListener('click', async (e) => {
+                        e.stopPropagation();
+                        const docId = e.target.closest('button').getAttribute('data-id');
+                        if (confirm('Bu kaydı silmek istediğinize emin misiniz?')) {
+                            await deleteRecord(docId, 'materials');
+                            loadLastRecords(facilityId);
+                        }
+                    });
+                });
+                
+                // Düzenleme butonlarına event listener ekle
+                document.querySelectorAll('.edit-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const docId = e.target.closest('button').getAttribute('data-id');
+                        editMaterial(docId);
+                    });
+                });
+                
+            } catch (error) {
+                console.error("Kayıt yükleme hatası:", error);
+                document.getElementById('kayitListesi').innerHTML = 
+                    `<tr><td colspan="7" class="text-center text-danger">Kayıtlar yüklenirken hata oluştu: ${error.message}</td></tr>`;
+            }
+        }
+        
+        // Son ürün kayıtlarını yükle
+        async function loadProducts(facilityId) {
+            try {
+                const snapshot = await firebase.firestore()
+                    .collection('products')
+                    .where('facilityId', '==', facilityId)
+                    .orderBy('productionDate', 'desc')
+                    .limit(10)
+                    .get();
+                
+                let html = '';
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const tarih = data.productionDate?.toDate 
+                        ? data.productionDate.toDate().toLocaleDateString('tr-TR') 
+                        : 'Tarih yok';
+                    
+                    html += `
+                        <tr data-id="${doc.id}">
+                            <td>${tarih}</td>
+                            <td>${data.facilityName || data.facilityId}</td>
+                            <td>${data.cnCode || ''}</td>
+                            <td>${data.productName || ''}</td>
+                            <td>${data.productionAmount || '0'} ton</td>
+                            <td class="action-buttons">
+                                <button class="btn btn-sm btn-warning edit-btn" data-id="${doc.id}">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger delete-btn" data-id="${doc.id}">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    `;
+                });
+                
+                document.getElementById('productList').innerHTML = html || 
+                    `<tr><td colspan="6" class="text-center">Henüz ürün kaydı bulunamadı</td></tr>`;
+                
+                // Silme butonlarına event listener ekle
+                document.querySelectorAll('.delete-btn').forEach(btn => {
+                    btn.addEventListener('click', async (e) => {
+                        e.stopPropagation();
+                        const docId = e.target.closest('button').getAttribute('data-id');
+                        if (confirm('Bu ürün kaydını silmek istediğinize emin misiniz?')) {
+                            await deleteRecord(docId, 'products');
+                            loadProducts(facilityId);
+                        }
+                    });
+                });
+                
+                // Düzenleme butonlarına event listener ekle
+                document.querySelectorAll('.edit-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const docId = e.target.closest('button').getAttribute('data-id');
+                        editProduct(docId);
+                    });
+                });
+                
+            } catch (error) {
+                console.error("Ürün yükleme hatası:", error);
+                document.getElementById('productList').innerHTML = 
+                    `<tr><td colspan="6" class="text-center text-danger">Ürünler yüklenirken hata oluştu: ${error.message}</td></tr>`;
+            }
+        }
+        
+        // Kayıt silme fonksiyonu
+        async function deleteRecord(docId, collectionName) {
+            try {
+                await firebase.firestore().collection(collectionName).doc(docId).delete();
+                alert('Kayıt başarıyla silindi.');
+            } catch (error) {
+                console.error("Silme hatası:", error);
+                alert(`Silme işlemi sırasında hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Emisyon kaydını düzenleme fonksiyonu
+        async function editMaterial(docId) {
+            try {
+                const doc = await firebase.firestore().collection('materials').doc(docId).get();
+                if (!doc.exists) {
+                    alert('Kayıt bulunamadı!');
+                    return;
+                }
+                
+                const data = doc.data();
+                
+                // Formu doldur
+                document.getElementById('facilitySelect').value = data.facilityId;
+                document.getElementById('cnCode').value = data.cnCode || '';
+                document.getElementById('precursorAdi').value = data.precursorAdi || '';
+                document.getElementById('kullanilanMiktar').value = data.kullanilanMiktar || '';
+                document.getElementById('producedCountry').value = data.producedCountry || '';
+                document.getElementById('producedFacility').value = data.producedFacility || '';
+                
+                // Tarihleri ayarla
+                if (data.kullanimTarihi?.toDate) {
+                    document.getElementById('kullanimTarihi').valueAsDate = data.kullanimTarihi.toDate();
+                }
+                if (data.reportingPeriodStart?.toDate) {
+                    document.getElementById('reportingPeriodStart').valueAsDate = data.reportingPeriodStart.toDate();
+                }
+                if (data.reportingPeriodEnd?.toDate) {
+                    document.getElementById('reportingPeriodEnd').valueAsDate = data.reportingPeriodEnd.toDate();
+                }
+                
+                // Diğer alanlar
+                document.getElementById('defaultSEEDirect').value = data.defaultSEEDirect || '';
+                document.getElementById('defaultSEEIndirect').value = data.defaultSEEIndirect || '';
+                document.getElementById('gercekSEEDirect').value = data.gercekSEEDirect || '';
+                document.getElementById('gercekSEEIndirect').value = data.gercekSEEIndirect || '';
+                
+                // Ürün CN kodunu güncelle
+                await updateProductCnCodesBasedOnPeriod();
+                setTimeout(() => {
+                    document.getElementById('kullanildigiUrunKodu').value = data.kullanildigiUrunKodu || '';
+                }, 500);
+                
+                // Düzenleme modunu etkinleştir
+                document.getElementById('editingMaterialId').value = docId;
+                document.getElementById('cancelEditBtn').style.display = 'inline-block';
+                
+                // Kullanıcıyı forma yönlendir
+                showAppView();
+                window.scrollTo(0, 0);
+                
+            } catch (error) {
+                console.error("Düzenleme hatası:", error);
+                alert(`Düzenleme işlemi sırasında hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Ürün kaydını düzenleme fonksiyonu
+        async function editProduct(docId) {
+            try {
+                const doc = await firebase.firestore().collection('products').doc(docId).get();
+                if (!doc.exists) {
+                    alert('Kayıt bulunamadı!');
+                    return;
+                }
+                
+                const data = doc.data();
+                
+                // Formu doldur
+                document.getElementById('productCnCode').value = data.cnCode || '';
+                document.getElementById('productName').value = data.productName || '';
+                document.getElementById('productionAmount').value = data.productionAmount || '';
+                
+                if (data.productionDate?.toDate) {
+                    document.getElementById('productionDate').valueAsDate = data.productionDate.toDate();
+                }
+                
+                // Düzenleme modunu etkinleştir
+                document.getElementById('editingProductId').value = docId;
+                document.getElementById('cancelEditProductBtn').style.display = 'inline-block';
+                
+                // Kullanıcıyı forma yönlendir
+                showProductsView();
+                window.scrollTo(0, 0);
+                
+            } catch (error) {
+                console.error("Düzenleme hatası:", error);
+                alert(`Düzenleme işlemi sırasında hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Emisyon kaydını güncelleme fonksiyonu
+        async function updateMaterial(docId) {
+            const selectedFacility = document.getElementById('facilitySelect').value;
+            if (!selectedFacility) {
+                alert("Lütfen bir tesis seçiniz!");
+                return;
+            }
+            
+            try {
+                const veri = {
+                    facilityId: selectedFacility,
+                    facilityName: facilitiesCache[selectedFacility]?.name || selectedFacility,
+                    cnCode: document.getElementById('cnCode').value,
+                    kullanildigiUrunKodu: document.getElementById('kullanildigiUrunKodu').value,
+                    precursorAdi: document.getElementById('precursorAdi').value,
+                    kullanimTarihi: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('kullanimTarihi').value)
+                    ),
+                    kullanilanMiktar: parseFloat(document.getElementById('kullanilanMiktar').value),
+                    defaultSEEDirect: parseFloat(document.getElementById('defaultSEEDirect').value) || 0,
+                    defaultSEEIndirect: parseFloat(document.getElementById('defaultSEEIndirect').value) || 0,
+                    gercekSEEDirect: document.getElementById('gercekSEEDirect').value 
+                        ? parseFloat(document.getElementById('gercekSEEDirect').value) 
+                        : null,
+                    gercekSEEIndirect: document.getElementById('gercekSEEIndirect').value 
+                        ? parseFloat(document.getElementById('gercekSEEIndirect').value) 
+                        : null,
+                    reportingPeriodStart: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('reportingPeriodStart').value)
+                    ),
+                    reportingPeriodEnd: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('reportingPeriodEnd').value)
+                    ),
+                    producedCountry: document.getElementById('producedCountry').value,
+                    producedFacility: document.getElementById('producedFacility').value,
+                    updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+                    updatedBy: currentUser.email
+                };
+                
+                await firebase.firestore().collection('materials').doc(docId).update(veri);
+                alert(`Kayıt başarıyla güncellendi!`);
+                
+                // Formu ve düzenleme modunu sıfırla
+                cancelEdit();
+                
+                // Listeyi yenile
+                loadLastRecords(selectedFacility);
+                
+            } catch (error) {
+                console.error("Güncelleme hatası:", error);
+                alert(`Hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Ürün kaydını güncelleme fonksiyonu
+        async function updateProduct(docId) {
+            const selectedFacility = document.getElementById('facilitySelect').value;
+            if (!selectedFacility) {
+                alert("Lütfen bir tesis seçiniz!");
+                return;
+            }
+            
+            try {
+                const productData = {
+                    facilityId: selectedFacility,
+                    facilityName: facilitiesCache[selectedFacility]?.name || selectedFacility,
+                    cnCode: document.getElementById('productCnCode').value,
+                    productName: document.getElementById('productName').value,
+                    productionAmount: parseFloat(document.getElementById('productionAmount').value),
+                    productionDate: firebase.firestore.Timestamp.fromDate(
+                        new Date(document.getElementById('productionDate').value)
+                    ),
+                    updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
+                    updatedBy: currentUser.email
+                };
+                
+                await firebase.firestore().collection('products').doc(docId).update(productData);
+                alert("Ürün başarıyla güncellendi!");
+                
+                // Formu ve düzenleme modunu sıfırla
+                cancelEditProduct();
+                
+                // Listeyi yenile
+                loadProducts(selectedFacility);
+                
+            } catch (error) {
+                console.error("Ürün güncelleme hatası:", error);
+                alert(`Hata oluştu: ${error.message}`);
+            }
+        }
+        
+        // Emisyon düzenleme iptal fonksiyonu
+        function cancelEdit() {
+            document.getElementById('veriForm').reset();
+            document.getElementById('editingMaterialId').value = '';
+            document.getElementById('cancelEditBtn').style.display = 'none';
+            
+            // Default değerleri ve tarihleri sıfırla
+            document.getElementById('defaultSEEDirect').value = '';
+            document.getElementById('defaultSEEIndirect').value = '';
+            document.getElementById('defaultDegerKaynak').value = '';
+            document.getElementById('kullanimTarihi').valueAsDate = new Date();
+            document.getElementById('reportingPeriodStart').valueAsDate = new Date(new Date().setMonth(new Date().getMonth() - 3));
+            document.getElementById('reportingPeriodEnd').valueAsDate = new Date();
+        }
+        
+        // Ürün düzenleme iptal fonksiyonu
+        function cancelEditProduct() {
+            document.getElementById('productForm').reset();
+            document.getElementById('editingProductId').value = '';
+            document.getElementById('cancelEditProductBtn').style.display = 'none';
+            document.getElementById('productionDate').valueAsDate = new Date();
+        }
+        
+        // Giriş formunu göster
+        function showLoginForm() {
+            document.getElementById('appContainer').style.display = 'none';
+            document.getElementById('productsContainer').style.display = 'none';
+            document.getElementById('facilitiesContainer').style.display = 'none';
+            document.getElementById('loginContainer').style.display = 'block';
+            document.getElementById('loginForm').reset();
+        }
+        
+        // Tesis bilgileri görünümünü göster
+        function showFacilitiesView() {
+            currentView = 'facilities';
+            document.getElementById('appContainer').style.display = 'none';
+            document.getElementById('productsContainer').style.display = 'none';
+            document.getElementById('facilitiesContainer').style.display = 'block';
+            document.getElementById('loginContainer').style.display = 'none';
+        }
+        
+        // Ürün görünümünü göster
+        function showProductsView() {
+            currentView = 'products';
+            document.getElementById('appContainer').style.display = 'none';
+            document.getElementById('productsContainer').style.display = 'block';
+            document.getElementById('facilitiesContainer').style.display = 'none';
+            document.getElementById('loginContainer').style.display = 'none';
+            
+            document.getElementById('productionDate').valueAsDate = new Date();
+            loadProductCnCodes();
+            
+            const facilitySelect = document.getElementById('facilitySelect');
+            if (facilitySelect.value) {
+                loadProducts(facilitySelect.value);
+            }
+        }
+        
+        // Ana uygulama görünümünü göster
+        function showAppView() {
+            currentView = 'app';
+            document.getElementById('appContainer').style.display = 'block';
+            document.getElementById('productsContainer').style.display = 'none';
+            document.getElementById('facilitiesContainer').style.display = 'none';
+            document.getElementById('loginContainer').style.display = 'none';
+            
+            document.getElementById('kullanimTarihi').valueAsDate = new Date();
+            document.getElementById('reportingPeriodStart').valueAsDate = new Date(new Date().setMonth(new Date().getMonth() - 3));
+            document.getElementById('reportingPeriodEnd').valueAsDate = new Date();
+        }
+    </script>
+</body>
+</html>

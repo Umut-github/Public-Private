@@ -1,0 +1,3410 @@
+{
+    "25070080": {
+        "name": "Kaolen ve diğer kaolin kili",
+        "defaultSEEDirect": 0.23,
+        "defaultSEEIndirect": 0.08,
+        "kaynak": "Excel Import"
+    },
+    "25231000": {
+        "name": "Çimento klinkeri",
+        "defaultSEEDirect": 0.83,
+        "defaultSEEIndirect": 0.04,
+        "kaynak": "Excel Import"
+    },
+    "25232100": {
+        "name": "Beyaz çimento",
+        "defaultSEEDirect": 1.16,
+        "defaultSEEIndirect": 0.1,
+        "kaynak": "Excel Import"
+    },
+    "25232900": {
+        "name": "Diğer çimentolar",
+        "defaultSEEDirect": 0.81,
+        "defaultSEEIndirect": 0.06,
+        "kaynak": "Excel Import"
+    },
+    "25233000": {
+        "name": "Alüminyum çimento",
+        "defaultSEEDirect": 1.75,
+        "defaultSEEIndirect": 0.15,
+        "kaynak": "Excel Import"
+    },
+    "25239000": {
+        "name": "Diğer hidrolik çimentolar",
+        "defaultSEEDirect": 0.59,
+        "defaultSEEIndirect": 0.04,
+        "kaynak": "Excel Import"
+    },
+    "26011200": {
+        "name": "Konsantre bakır cevherleri",
+        "defaultSEEDirect": 0.31,
+        "defaultSEEIndirect": 0.05,
+        "kaynak": "Excel Import"
+    },
+    "28041000": {
+        "name": "Hidrojen",
+        "defaultSEEDirect": 10.4,
+        "defaultSEEIndirect": 0.0,
+        "kaynak": "Excel Import"
+    },
+    "28080000": {
+        "name": "Nitrik asit",
+        "defaultSEEDirect": 2.56,
+        "defaultSEEIndirect": 0.05,
+        "kaynak": "Excel Import"
+    },
+    "28141000": {
+        "name": "Amonyak",
+        "defaultSEEDirect": 2.68,
+        "defaultSEEIndirect": 0.14,
+        "kaynak": "Excel Import"
+    },
+    "28142000": {
+        "name": "Amonyum hidroksit",
+        "defaultSEEDirect": 2.68,
+        "defaultSEEIndirect": 0.14,
+        "kaynak": "Excel Import"
+    },
+    "28342100": {
+        "name": "Nitratlar",
+        "defaultSEEDirect": 1.82,
+        "defaultSEEIndirect": 0.06,
+        "kaynak": "Excel Import"
+    },
+    "31021010": {
+        "name": "Üre",
+        "defaultSEEDirect": 1.78,
+        "defaultSEEIndirect": 0.12,
+        "kaynak": "Excel Import"
+    },
+    "31021090": {
+        "name": "Diğer üreler",
+        "defaultSEEDirect": 1.78,
+        "defaultSEEIndirect": 0.12,
+        "kaynak": "Excel Import"
+    },
+    "31022100": {
+        "name": "Amonyum sülfat",
+        "defaultSEEDirect": 0.86,
+        "defaultSEEIndirect": 0.09,
+        "kaynak": "Excel Import"
+    },
+    "31022900": {
+        "name": "Diğer amonyum tuzları",
+        "defaultSEEDirect": 1.54,
+        "defaultSEEIndirect": 0.1,
+        "kaynak": "Excel Import"
+    },
+    "31023010": {
+        "name": "Amonyum nitrat",
+        "defaultSEEDirect": 2.32,
+        "defaultSEEIndirect": 0.07,
+        "kaynak": "Excel Import"
+    },
+    "31023090": {
+        "name": "Diğer amonyum nitratlar",
+        "defaultSEEDirect": 2.32,
+        "defaultSEEIndirect": 0.07,
+        "kaynak": "Excel Import"
+    },
+    "31024010": {
+        "name": "Amonyum fosfat",
+        "defaultSEEDirect": 1.77,
+        "defaultSEEIndirect": 0.06,
+        "kaynak": "Excel Import"
+    },
+    "31024090": {
+        "name": "Diğer amonyum fosfatlar",
+        "defaultSEEDirect": 1.77,
+        "defaultSEEIndirect": 0.06,
+        "kaynak": "Excel Import"
+    },
+    "31025000": {
+        "name": "Potasyum nitrat",
+        "defaultSEEDirect": 3.99,
+        "defaultSEEIndirect": 0.07,
+        "kaynak": "Excel Import"
+    },
+    "31026000": {
+        "name": "Kalsiyum nitrat",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.08,
+        "kaynak": "Excel Import"
+    },
+    "31028000": {
+        "name": "Üre ve amonyum nitrat karışımları",
+        "defaultSEEDirect": 1.28,
+        "defaultSEEIndirect": 0.06,
+        "kaynak": "Excel Import"
+    },
+    "31029000": {
+        "name": "Diğer azotlu gübreler",
+        "defaultSEEDirect": 1.65,
+        "defaultSEEIndirect": 0.1,
+        "kaynak": "Excel Import"
+    },
+    "31051000": {
+        "name": "Doğal potas gübreleri",
+        "defaultSEEDirect": 0.94,
+        "defaultSEEIndirect": 0.08,
+        "kaynak": "Excel Import"
+    },
+    "31052010": {
+        "name": "Potasyum klorür",
+        "defaultSEEDirect": 1.23,
+        "defaultSEEIndirect": 0.11,
+        "kaynak": "Excel Import"
+    },
+    "31052090": {
+        "name": "Diğer potas gübreleri",
+        "defaultSEEDirect": 1.23,
+        "defaultSEEIndirect": 0.11,
+        "kaynak": "Excel Import"
+    },
+    "31053000": {
+        "name": "Potasyum sülfat",
+        "defaultSEEDirect": 0.69,
+        "defaultSEEIndirect": 0.06,
+        "kaynak": "Excel Import"
+    },
+    "31054000": {
+        "name": "Diğer potas gübreleri",
+        "defaultSEEDirect": 0.44,
+        "defaultSEEIndirect": 0.05,
+        "kaynak": "Excel Import"
+    },
+    "31055100": {
+        "name": "Fosfatlı gübreler",
+        "defaultSEEDirect": 1.29,
+        "defaultSEEIndirect": 0.11,
+        "kaynak": "Excel Import"
+    },
+    "31055900": {
+        "name": "Diğer fosfatlı gübreler",
+        "defaultSEEDirect": 1.29,
+        "defaultSEEIndirect": 0.11,
+        "kaynak": "Excel Import"
+    },
+    "31059020": {
+        "name": "Kompoze gübreler",
+        "defaultSEEDirect": 0.94,
+        "defaultSEEIndirect": 0.08,
+        "kaynak": "Excel Import"
+    },
+    "31059080": {
+        "name": "Diğer gübreler",
+        "defaultSEEDirect": 0.94,
+        "defaultSEEIndirect": 0.08,
+        "kaynak": "Excel Import"
+    },
+    "72011011": {
+        "name": "Pik demir <%1 silicon",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72011019": {
+        "name": "Pik demir >%1 silicon",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72011030": {
+        "name": "Pik demir >%0.1-<%0.4 manganese",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72011090": {
+        "name": "Pik demir <%0.1 manganese",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72012000": {
+        "name": "Pik demir <%0.5 phosphorus",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72015010": {
+        "name": "Pik demir",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72015090": {
+        "name": "Diğer pik demir",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72021120": {
+        "name": "Ferromangan",
+        "defaultSEEDirect": 1.44,
+        "defaultSEEIndirect": 2.08,
+        "kaynak": "Excel Import"
+    },
+    "72021180": {
+        "name": "Diğer ferromanganlar",
+        "defaultSEEDirect": 1.44,
+        "defaultSEEIndirect": 2.08,
+        "kaynak": "Excel Import"
+    },
+    "72021900": {
+        "name": "Diğer Ferromanganlar",
+        "defaultSEEDirect": 1.44,
+        "defaultSEEIndirect": 2.08,
+        "kaynak": "Excel Import"
+    },
+    "72024110": {
+        "name": "Ferrokrom",
+        "defaultSEEDirect": 2.07,
+        "defaultSEEIndirect": 3.38,
+        "kaynak": "Excel Import"
+    },
+    "72024190": {
+        "name": "Diğer ferrokromlar",
+        "defaultSEEDirect": 2.07,
+        "defaultSEEIndirect": 3.38,
+        "kaynak": "Excel Import"
+    },
+    "72024910": {
+        "name": "Ferrokrom",
+        "defaultSEEDirect": 2.07,
+        "defaultSEEIndirect": 3.38,
+        "kaynak": "Excel Import"
+    },
+    "72024950": {
+        "name": "Ferrokrom",
+        "defaultSEEDirect": 2.07,
+        "defaultSEEIndirect": 3.38,
+        "kaynak": "Excel Import"
+    },
+    "72024990": {
+        "name": "Ferrokrom",
+        "defaultSEEDirect": 2.07,
+        "defaultSEEIndirect": 3.38,
+        "kaynak": "Excel Import"
+    },
+    "72026000": {
+        "name": "Ferronikel",
+        "defaultSEEDirect": 3.48,
+        "defaultSEEIndirect": 2.81,
+        "kaynak": "Excel Import"
+    },
+    "72031000": {
+        "name": "DRI",
+        "defaultSEEDirect": 4.81,
+        "defaultSEEIndirect": 0.0,
+        "kaynak": "Excel Import"
+    },
+    "72039000": {
+        "name": "Diğer DRI",
+        "defaultSEEDirect": 4.81,
+        "defaultSEEIndirect": 0.0,
+        "kaynak": "Excel Import"
+    },
+    "72051000": {
+        "name": "Granüle edilmiş demir",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72052100": {
+        "name": "Demir Çelik ürünü",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72052900": {
+        "name": "Diğer Demir Çelik ürünü",
+        "defaultSEEDirect": 1.9,
+        "defaultSEEIndirect": 0.17,
+        "kaynak": "Excel Import"
+    },
+    "72061000": {
+        "name": "Ingot",
+        "defaultSEEDirect": 2.52,
+        "defaultSEEIndirect": 0.23,
+        "kaynak": "Excel Import"
+    },
+    "72069000": {
+        "name": "Diğer ham çelik",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.23,
+        "kaynak": "Excel Import"
+    },
+    "72071111": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72071114": {
+        "name": "Ham çelik <130 mm",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72071116": {
+        "name": "Ham çelik >130 mm",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72071190": {
+        "name": "Dövme ham çelik",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72071210": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72071290": {
+        "name": "Ham Çelik",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72071912": {
+        "name": "Ham Çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72071919": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72071980": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72072011": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72072015": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72072017": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72072019": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72072032": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72072039": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72072052": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72072059": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72072080": {
+        "name": "Ham çelik",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72081000": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72082500": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72082600": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72082700": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72083600": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72083700": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72083800": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72083900": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72084000": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085120": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085191": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085198": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085210": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085291": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085299": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085310": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085390": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72085400": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72089020": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72089080": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72091500": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091610": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091690": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091710": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091790": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091810": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091891": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72091899": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092500": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092610": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092690": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092710": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092790": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092810": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72092890": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72099020": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72099080": {
+        "name": "Sıcak haddelenmiş demir çubuklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72101100": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72101220": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72101280": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72102000": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72103000": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72104100": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72104900": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72105000": {
+        "name": "Kaplamalı demir çubuklar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72106100": {
+        "name": "Kaplanmış veya kaplanmamış demir/çelik çubuklar (sıcak haddelenmiş, dövülmüş veya burulmuş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72106900": {
+        "name": "Diğer demir/çelik çubuklar (sıcak haddelenmiş, dövülmüş veya burulmuş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72107010": {
+        "name": "Paslanmaz çelikten çubuklar (soğuk çekilmiş veya talaşlı imalat)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72107080": {
+        "name": "Diğer alaşımlı çelik çubuklar (soğuk çekilmiş veya talaşlı imalat)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72109030": {
+        "name": "Yüksek karbonlu çelik çubuklar (soğuk çekilmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72109040": {
+        "name": "Orta/düşük karbonlu çelik çubuklar (soğuk çekilmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72109080": {
+        "name": "Diğer demir/çelik çubuklar (soğuk çekilmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72111300": {
+        "name": "Paslanmaz çelikten hadde ürünleri (genişlik ≥ 600 mm, sıcak haddelenmiş)",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72111400": {
+        "name": "Diğer alaşımlı çelik hadde ürünleri (genişlik ≥ 600 mm, sıcak haddelenmiş)",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72111900": {
+        "name": "Diğer demir/çelik hadde ürünleri (genişlik ≥ 600 mm, sıcak haddelenmiş)",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "72112320": {
+        "name": "Paslanmaz çelik saclar (genişlik ≥ 600 mm, soğuk haddelenmiş)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72112330": {
+        "name": "Silikonlu elektrik çeliği sacları (genişlik ≥ 600 mm, soğuk haddelenmiş)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72112380": {
+        "name": "Diğer alaşımlı çelik saclar (genişlik ≥ 600 mm, soğuk haddelenmiş)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72112900": {
+        "name": "Diğer demir/çelik saclar (genişlik ≥ 600 mm, soğuk haddelenmiş)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72119020": {
+        "name": "Galvanizli çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72119080": {
+        "name": "Diğer kaplamalı çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "72121010": {
+        "name": "Paslanmaz çelikten hadde ürünleri (genişlik < 600 mm, sıcak haddelenmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72121090": {
+        "name": "Diğer alaşımlı çelik hadde ürünleri (genişlik < 600 mm, sıcak haddelenmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72122000": {
+        "name": "Paslanmaz çelikten hadde ürünleri (genişlik < 600 mm, soğuk haddelenmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72123000": {
+        "name": "Diğer alaşımlı çelik hadde ürünleri (genişlik < 600 mm, soğuk haddelenmiş)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72124020": {
+        "name": "Yüksek karbonlu çelik şeritler (genişlik < 600 mm)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72124080": {
+        "name": "Diğer alaşımlı çelik şeritler (genişlik < 600 mm)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72125020": {
+        "name": "Paslanmaz çelikten teller",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72125030": {
+        "name": "Diğer alaşımlı çelik teller",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72125040": {
+        "name": "Galvanizli çelik teller",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72125061": {
+        "name": "Yüksek karbonlu çelik teller",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72125069": {
+        "name": "Diğer karbon çelik teller",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72125090": {
+        "name": "Diğer demir/çelik teller",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72126000": {
+        "name": "Demir/çelikten döküntü ve hurdalar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "72131000": {
+        "name": "Paslanmaz çelikten tel ve kablolar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72132000": {
+        "name": "Diğer alaşımlı çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139110": {
+        "name": "Galvanizli çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139120": {
+        "name": "Yüksek karbonlu çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139141": {
+        "name": "Orta karbonlu çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139149": {
+        "name": "Düşük karbonlu çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139170": {
+        "name": "Alaşımlı çelik teller (diğer)",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139190": {
+        "name": "Diğer çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139910": {
+        "name": "Demir teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72139990": {
+        "name": "Diğer demir/çelik teller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72141000": {
+        "name": "Paslanmaz çelikten döküntü ve hurdalar",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "72142000": {
+        "name": "Diğer alaşımlı çelik döküntüleri",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72143000": {
+        "name": "Demir/çelik talaşları ve tozları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149110": {
+        "name": "Paslanmaz çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149190": {
+        "name": "Diğer alaşımlı çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149910": {
+        "name": "Demir talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149931": {
+        "name": "Yüksek karbonlu çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149939": {
+        "name": "Orta/düşük karbonlu çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149950": {
+        "name": "Galvanizli çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149971": {
+        "name": "Kaplamalı çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149979": {
+        "name": "Diğer kaplamalı çelik talaşları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72149995": {
+        "name": "Diğer demir/çelik talaş ve tozları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72151000": {
+        "name": "Paslanmaz çelikten ince ve kalın borular",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72155011": {
+        "name": "Yüksek karbonlu çelik borular",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72155019": {
+        "name": "Diğer karbon çelik borular",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72155080": {
+        "name": "Diğer alaşımlı çelik borular",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72159000": {
+        "name": "Diğer demir/çelik borular",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72161000": {
+        "name": "Paslanmaz çelikten U, I, H profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72162100": {
+        "name": "Yüksek karbonlu çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72162200": {
+        "name": "Orta/düşük karbonlu çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163110": {
+        "name": "Paslanmaz çelikten köşebentler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163190": {
+        "name": "Diğer paslanmaz çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163211": {
+        "name": "Yüksek karbonlu çelik köşebentler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163219": {
+        "name": "Diğer yüksek karbonlu çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163291": {
+        "name": "Orta/düşük karbonlu çelik köşebentler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163299": {
+        "name": "Diğer orta/düşük karbonlu çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163310": {
+        "name": "Alaşımlı çelik köşebentler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72163390": {
+        "name": "Diğer alaşımlı çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72164010": {
+        "name": "Paslanmaz çelikten lama ve şeritler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72164090": {
+        "name": "Diğer alaşımlı çelik lama/şeritler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72165010": {
+        "name": "Yüksek karbonlu çelik lama/şeritler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72165091": {
+        "name": "Orta karbonlu çelik lama/şeritler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72165099": {
+        "name": "Düşük karbonlu çelik lama/şeritler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72166110": {
+        "name": "Paslanmaz çelikten çubuklar (dövülmüş)",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72166190": {
+        "name": "Diğer alaşımlı çelik çubuklar (dövülmüş)",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72166900": {
+        "name": "Diğer demir/çelik çubuklar (dövülmüş)",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72169110": {
+        "name": "Paslanmaz çelikten diğer profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72169180": {
+        "name": "Diğer alaşımlı çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72169900": {
+        "name": "Diğer demir/çelik profiller",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "72171010": {
+        "name": "Paslanmaz çelikten tel örgüler",
+        "defaultSEEDirect": 1.88,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72171031": {
+        "name": "Galvanizli çelik tel örgüler",
+        "defaultSEEDirect": 1.88,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72171039": {
+        "name": "Diğer kaplamalı çelik tel örgüler",
+        "defaultSEEDirect": 1.88,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72171050": {
+        "name": "Yüksek karbonlu çelik tel örgüler",
+        "defaultSEEDirect": 1.88,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72171090": {
+        "name": "Diğer demir/çelik tel örgüler",
+        "defaultSEEDirect": 1.88,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72172010": {
+        "name": "Paslanmaz çelikten çiviler ve raptiyeler",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72172030": {
+        "name": "Alaşımlı çelik çiviler",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72172050": {
+        "name": "Yüksek karbonlu çelik çiviler",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72172090": {
+        "name": "Diğer demir/çelik çiviler ve raptiyeler",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72173041": {
+        "name": "Paslanmaz çelikten cıvatalar",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72173049": {
+        "name": "Diğer alaşımlı çelik cıvatalar",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72173050": {
+        "name": "Yüksek karbonlu çelik cıvatalar",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72173090": {
+        "name": "Diğer demir/çelik cıvatalar",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72179020": {
+        "name": "Paslanmaz çelikten somunlar",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72179050": {
+        "name": "Alaşımlı çelik somunlar",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72179090": {
+        "name": "Diğer demir/çelik bağlantı elemanları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72181000": {
+        "name": "Paslanmaz çelikten bıçaklar ve kesici aletler",
+        "defaultSEEDirect": 2.51,
+        "defaultSEEIndirect": 2.1,
+        "kaynak": "Excel Import"
+    },
+    "72189110": {
+        "name": "Bulaşık makinesi çelikleri",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72189180": {
+        "name": "Diğer ev eşyası çelikleri",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72189911": {
+        "name": "Paslanmaz çelikten mutfak eşyaları",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72189919": {
+        "name": "Diğer paslanmaz çelik ev eşyaları",
+        "defaultSEEDirect": 2.51,
+        "defaultSEEIndirect": 2.1,
+        "kaynak": "Excel Import"
+    },
+    "72189920": {
+        "name": "Alaşımlı çelikten ev eşyaları",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72189980": {
+        "name": "Diğer demir/çelik ev eşyaları",
+        "defaultSEEDirect": 2.51,
+        "defaultSEEIndirect": 2.1,
+        "kaynak": "Excel Import"
+    },
+    "72191100": {
+        "name": "Paslanmaz çelikten cerrahi aletler",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72191210": {
+        "name": "Dental çelik aletler",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72191290": {
+        "name": "Diğer tıbbi çelik aletler",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72191310": {
+        "name": "Laboratuvar çelik aletleri",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72191390": {
+        "name": "Diğer teknik çelik aletler",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72191410": {
+        "name": "Ölçüm çelik aletleri",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72191490": {
+        "name": "Diğer hassas çelik aletler",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72192110": {
+        "name": "Paslanmaz çelikten bıçak bıçakları",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72192190": {
+        "name": "Diğer paslanmaz çelik bıçaklar",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72192210": {
+        "name": "Yüksek karbonlu çelik bıçak bıçakları",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72192290": {
+        "name": "Diğer yüksek karbonlu çelik bıçaklar",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72192300": {
+        "name": "Alaşımlı çelik bıçaklar",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72192400": {
+        "name": "Diğer demir/çelik bıçaklar",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72193100": {
+        "name": "Paslanmaz çelikten makaslar",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193210": {
+        "name": "Yüksek karbonlu çelik makaslar",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193290": {
+        "name": "Diğer karbon çelik makaslar",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193310": {
+        "name": "Alaşımlı çelik makaslar",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193390": {
+        "name": "Diğer alaşımlı çelik kesici aletler",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193410": {
+        "name": "Demir makaslar",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193490": {
+        "name": "Diğer demir kesici aletler",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193510": {
+        "name": "Paslanmaz çelikten tırnak makasları",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72193590": {
+        "name": "Diğer özel çelik kesici aletler",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72199020": {
+        "name": "Paslanmaz çelikten diğer aletler",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72199080": {
+        "name": "Diğer demir/çelik aletler",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72201100": {
+        "name": "Paslanmaz çelikten yassı çelik ürünleri (kalınlık ≥ 4.75 mm)",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72201200": {
+        "name": "Paslanmaz çelikten yassı çelik ürünleri (kalınlık < 4.75 mm)",
+        "defaultSEEDirect": 2.18,
+        "defaultSEEIndirect": 1.9,
+        "kaynak": "Excel Import"
+    },
+    "72202021": {
+        "name": "Silikonlu elektrik çeliği sacları (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72202029": {
+        "name": "Diğer silikonlu çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72202041": {
+        "name": "Yüksek karbonlu çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72202049": {
+        "name": "Diğer karbon çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72202081": {
+        "name": "Alaşımlı çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72202089": {
+        "name": "Diğer alaşımlı çelik saclar (genişlik ≥ 600 mm)",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72209020": {
+        "name": "Paslanmaz çelikten diğer yassı çelik ürünleri",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72209080": {
+        "name": "Diğer demir/çelik yassı ürünler",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "72210010": {
+        "name": "Paslanmaz çelikten soğuk haddelenmiş yassı çelik ürünleri",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72210090": {
+        "name": "Diğer alaşımlı çeliklerden soğuk haddelenmiş yassı çelik ürünleri",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72221111": {
+        "name": "Silisyumlu elektrik çeliği sac ve şeritleri (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72221119": {
+        "name": "Diğer silisyumlu çelik saclar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72221181": {
+        "name": "Yüksek karbonlu çelik saclar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72221189": {
+        "name": "Diğer karbon çelik saclar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72221910": {
+        "name": "Paslanmaz çelik saclar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72221990": {
+        "name": "Diğer alaşımlı çelik saclar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222011": {
+        "name": "Paslanmaz çelikten soğuk haddelenmiş bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222019": {
+        "name": "Diğer paslanmaz çelik bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222021": {
+        "name": "Silikonlu elektrik çeliği bantları (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222029": {
+        "name": "Diğer silikonlu çelik bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222031": {
+        "name": "Yüksek karbonlu çelik bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222039": {
+        "name": "Diğer karbon çelik bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222081": {
+        "name": "Alaşımlı çelik bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72222089": {
+        "name": "Diğer alaşımlı çelik bantlar (genişlik < 600 mm)",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72223051": {
+        "name": "Paslanmaz çelikten ince borular",
+        "defaultSEEDirect": 2.51,
+        "defaultSEEIndirect": 2.1,
+        "kaynak": "Excel Import"
+    },
+    "72223091": {
+        "name": "Yüksek karbonlu çelik ince borular",
+        "defaultSEEDirect": 2.51,
+        "defaultSEEIndirect": 2.1,
+        "kaynak": "Excel Import"
+    },
+    "72223097": {
+        "name": "Diğer alaşımlı çelik ince borular",
+        "defaultSEEDirect": 2.51,
+        "defaultSEEIndirect": 2.1,
+        "kaynak": "Excel Import"
+    },
+    "72224010": {
+        "name": "Paslanmaz çelikten kalın borular",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72224050": {
+        "name": "Yüksek karbonlu çelik kalın borular",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72224090": {
+        "name": "Diğer alaşımlı çelik kalın borular",
+        "defaultSEEDirect": 2.14,
+        "defaultSEEIndirect": 2.17,
+        "kaynak": "Excel Import"
+    },
+    "72230011": {
+        "name": "Paslanmaz çelikten teller ve kablolar",
+        "defaultSEEDirect": 2.13,
+        "defaultSEEIndirect": 2.36,
+        "kaynak": "Excel Import"
+    },
+    "72230019": {
+        "name": "Diğer alaşımlı çelik teller ve kablolar",
+        "defaultSEEDirect": 2.13,
+        "defaultSEEIndirect": 2.36,
+        "kaynak": "Excel Import"
+    },
+    "72230091": {
+        "name": "Yüksek karbonlu çelik teller ve kablolar",
+        "defaultSEEDirect": 2.13,
+        "defaultSEEIndirect": 2.36,
+        "kaynak": "Excel Import"
+    },
+    "72230099": {
+        "name": "Diğer demir/çelik teller ve kablolar",
+        "defaultSEEDirect": 2.13,
+        "defaultSEEIndirect": 2.36,
+        "kaynak": "Excel Import"
+    },
+    "72241010": {
+        "name": "Paslanmaz çelikten döküntü ve hurdalar",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72241090": {
+        "name": "Diğer alaşımlı çelik döküntüleri",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72249002": {
+        "name": "Yüksek karbonlu çelik talaşları ve tozları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249003": {
+        "name": "Orta/düşük karbonlu çelik talaşları ve tozları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249005": {
+        "name": "Galvanizli çelik talaşları ve tozları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249007": {
+        "name": "Kaplamalı çelik talaşları ve tozları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249014": {
+        "name": "Paslanmaz çelik talaşları ve tozları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249018": {
+        "name": "Diğer demir/çelik talaş ve tozları",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72249031": {
+        "name": "Paslanmaz çelikten döküntü ve hurdalar (özel işlem görmüş)",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249038": {
+        "name": "Diğer alaşımlı çelik döküntüleri (özel işlem görmüş)",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72249090": {
+        "name": "Diğer demir/çelik döküntü ve hurdalar",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72251100": {
+        "name": "Paslanmaz çelikten ince borular",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72251910": {
+        "name": "Yüksek karbonlu çelik ince borular",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72251990": {
+        "name": "Diğer alaşımlı çelik ince borular",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72253010": {
+        "name": "Paslanmaz çelikten kalın borular",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72253030": {
+        "name": "Yüksek karbonlu çelik kalın borular",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72253090": {
+        "name": "Diğer alaşımlı çelik kalın borular",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72254012": {
+        "name": "Paslanmaz çelikten boru bağlantı parçaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72254015": {
+        "name": "Yüksek karbonlu çelik boru bağlantı parçaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72254040": {
+        "name": "Alaşımlı çelik boru bağlantı parçaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72254060": {
+        "name": "Diğer demir/çelik boru bağlantı parçaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72254090": {
+        "name": "Diğer boru bağlantı parçaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72255020": {
+        "name": "Paslanmaz çelikten boru dirsekleri",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72255080": {
+        "name": "Diğer alaşımlı çelik boru dirsekleri",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72259100": {
+        "name": "Paslanmaz çelikten boru kelepçeleri",
+        "defaultSEEDirect": 1.92,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72259200": {
+        "name": "Yüksek karbonlu çelik boru kelepçeleri",
+        "defaultSEEDirect": 1.92,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72259900": {
+        "name": "Diğer demir/çelik boru kelepçeleri",
+        "defaultSEEDirect": 1.92,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72261100": {
+        "name": "Paslanmaz çelikten boru flanşları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72261910": {
+        "name": "Yüksek karbonlu çelik boru flanşları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72261980": {
+        "name": "Diğer alaşımlı çelik boru flanşları",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72262000": {
+        "name": "Paslanmaz çelikten boru contaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72269120": {
+        "name": "Paslanmaz çelikten boru vanaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72269191": {
+        "name": "Yüksek karbonlu çelik boru vanaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72269199": {
+        "name": "Diğer alaşımlı çelik boru vanaları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.4,
+        "kaynak": "Excel Import"
+    },
+    "72269200": {
+        "name": "Paslanmaz çelikten boru valfleri",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.49,
+        "kaynak": "Excel Import"
+    },
+    "72269910": {
+        "name": "Yüksek karbonlu çelik boru valfleri",
+        "defaultSEEDirect": 1.92,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72269930": {
+        "name": "Alaşımlı çelik boru valfleri",
+        "defaultSEEDirect": 1.92,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72269970": {
+        "name": "Diğer demir/çelik boru valfleri",
+        "defaultSEEDirect": 1.92,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "72271000": {
+        "name": "Paslanmaz çelikten boru dirsekleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72272000": {
+        "name": "Yüksek karbonlu çelik boru dirsekleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72279010": {
+        "name": "Alaşımlı çelik boru dirsekleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72279050": {
+        "name": "Diğer demir/çelik boru dirsekleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72279095": {
+        "name": "Diğer özel boru dirsekleri",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72281020": {
+        "name": "Paslanmaz çelikten boru bağlantı elemanları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72281050": {
+        "name": "Yüksek karbonlu çelik boru bağlantı elemanları",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72281090": {
+        "name": "Diğer alaşımlı çelik boru bağlantı elemanları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72282010": {
+        "name": "Paslanmaz çelikten boru kelepçeleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72282091": {
+        "name": "Yüksek karbonlu çelik boru kelepçeleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72282099": {
+        "name": "Diğer alaşımlı çelik boru kelepçeleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283020": {
+        "name": "Paslanmaz çelikten boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283041": {
+        "name": "Yüksek karbonlu çelik boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283049": {
+        "name": "Diğer karbon çelik boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283061": {
+        "name": "Alaşımlı çelik boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283069": {
+        "name": "Diğer alaşımlı çelik boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283070": {
+        "name": "Demir boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72283089": {
+        "name": "Diğer demir/çelik boru flanşları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72284010": {
+        "name": "Paslanmaz çelikten boru vanaları (özel)",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72284090": {
+        "name": "Diğer alaşımlı çelik boru vanaları (özel)",
+        "defaultSEEDirect": 2.41,
+        "defaultSEEIndirect": 0.79,
+        "kaynak": "Excel Import"
+    },
+    "72285020": {
+        "name": "Paslanmaz çelikten boru valfleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72285040": {
+        "name": "Yüksek karbonlu çelik boru valfleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72285061": {
+        "name": "Alaşımlı çelik boru valfleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72285069": {
+        "name": "Diğer alaşımlı çelik boru valfleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72285080": {
+        "name": "Diğer demir/çelik boru valfleri (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72286020": {
+        "name": "Paslanmaz çelikten boru contaları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72286080": {
+        "name": "Diğer alaşımlı çelik boru contaları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72287010": {
+        "name": "Paslanmaz çelikten boru bağlantı parçaları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72287090": {
+        "name": "Diğer alaşımlı çelik boru bağlantı parçaları (özel)",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72288000": {
+        "name": "Diğer özel boru bağlantı elemanları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "72292000": {
+        "name": "Paslanmaz çelikten boru destek elemanları",
+        "defaultSEEDirect": 1.84,
+        "defaultSEEIndirect": 0.75,
+        "kaynak": "Excel Import"
+    },
+    "72299020": {
+        "name": "Yüksek karbonlu çelik boru destek elemanları",
+        "defaultSEEDirect": 1.84,
+        "defaultSEEIndirect": 0.75,
+        "kaynak": "Excel Import"
+    },
+    "72299050": {
+        "name": "Alaşımlı çelik bıçaklar",
+        "defaultSEEDirect": 1.84,
+        "defaultSEEIndirect": 0.75,
+        "kaynak": "Excel Import"
+    },
+    "72299090": {
+        "name": "Diğer demir/çelik kesici aletler",
+        "defaultSEEDirect": 1.84,
+        "defaultSEEIndirect": 0.75,
+        "kaynak": "Excel Import"
+    },
+    "73011000": {
+        "name": "Demir/çelikten kazıklar",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73012000": {
+        "name": "Demir/çelikten kazık bağlantı elemanları",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73021010": {
+        "name": "Paslanmaz çelikten raylar",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73021022": {
+        "name": "Yüksek karbonlu çelik raylar",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73021028": {
+        "name": "Diğer karbon çelik raylar",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73021040": {
+        "name": "Alaşımlı çelik raylar",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73021050": {
+        "name": "Demir raylar",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73021090": {
+        "name": "Diğer demir/çelik raylar",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73023000": {
+        "name": "Demir/çelikten ray bağlantı elemanları",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73024000": {
+        "name": "Demir/çelikten ray destekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73029000": {
+        "name": "Diğer demir/çelik demiryolu malzemeleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73030010": {
+        "name": "Paslanmaz çelikten boru bağlantı parçaları",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73030090": {
+        "name": "Diğer demir/çelik boru bağlantı parçaları",
+        "defaultSEEDirect": 2.21,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73041100": {
+        "name": "Paslanmaz çelikten dikişsiz borular",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73041910": {
+        "name": "Yüksek karbonlu çelik dikişsiz borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73041930": {
+        "name": "Alaşımlı çelik dikişsiz borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73041990": {
+        "name": "Diğer demir/çelik dikişsiz borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73042200": {
+        "name": "Paslanmaz çelikten kaynaklı borular",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73042300": {
+        "name": "Yüksek karbonlu çelik kaynaklı borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73042400": {
+        "name": "Alaşımlı çelik kaynaklı borular",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73042910": {
+        "name": "Galvanizli çelik borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73042930": {
+        "name": "Kaplamalı çelik borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73042990": {
+        "name": "Diğer demir/çelik kaynaklı borular",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73043120": {
+        "name": "Paslanmaz çelikten boru dirsekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73043180": {
+        "name": "Diğer alaşımlı çelik boru dirsekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73043950": {
+        "name": "Yüksek karbonlu çelik boru dirsekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73043982": {
+        "name": "Galvanizli çelik boru dirsekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73043983": {
+        "name": "Kaplamalı çelik boru dirsekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73043988": {
+        "name": "Diğer demir/çelik boru dirsekleri",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73044100": {
+        "name": "Paslanmaz çelikten boru kelepçeleri",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73044983": {
+        "name": "Yüksek karbonlu çelik boru kelepçeleri",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73044985": {
+        "name": "Alaşımlı çelik boru kelepçeleri",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73044989": {
+        "name": "Diğer demir/çelik boru kelepçeleri",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045110": {
+        "name": "Paslanmaz çelikten boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045181": {
+        "name": "Yüksek karbonlu çelik boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045189": {
+        "name": "Diğer alaşımlı çelik boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045930": {
+        "name": "Galvanizli çelik boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045982": {
+        "name": "Kaplamalı çelik boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045983": {
+        "name": "Demir boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73045989": {
+        "name": "Diğer demir/çelik boru flanşları",
+        "defaultSEEDirect": 1.86,
+        "defaultSEEIndirect": 0.35,
+        "kaynak": "Excel Import"
+    },
+    "73049000": {
+        "name": "Diğer demir/çelik boru bağlantı elemanları",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73051100": {
+        "name": "Paslanmaz çelikten boru vanaları",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73051200": {
+        "name": "Yüksek karbonlu çelik boru vanaları",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73051900": {
+        "name": "Diğer alaşımlı çelik boru vanaları",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73052000": {
+        "name": "Demir/çelikten boru vanaları (diğer)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73053100": {
+        "name": "Paslanmaz çelikten boru valfleri",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73053900": {
+        "name": "Diğer demir/çelik boru valfleri",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73059000": {
+        "name": "Diğer demir/çelik boru kontrol elemanları",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73061100": {
+        "name": "Paslanmaz çelikten boru dirsekleri (kaynaklı)",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.46,
+        "kaynak": "Excel Import"
+    },
+    "73061900": {
+        "name": "Diğer demir/çelik boru dirsekleri (kaynaklı)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73062100": {
+        "name": "Paslanmaz çelikten boru kelepçeleri (kaynaklı)",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.46,
+        "kaynak": "Excel Import"
+    },
+    "73062900": {
+        "name": "Diğer demir/çelik boru kelepçeleri (kaynaklı)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73063012": {
+        "name": "Paslanmaz çelikten boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 2.03,
+        "defaultSEEIndirect": 0.36,
+        "kaynak": "Excel Import"
+    },
+    "73063018": {
+        "name": "Diğer alaşımlı çelik boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 2.01,
+        "defaultSEEIndirect": 0.27,
+        "kaynak": "Excel Import"
+    },
+    "73063041": {
+        "name": "Yüksek karbonlu çelik boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73063049": {
+        "name": "Diğer karbon çelik boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73063072": {
+        "name": "Galvanizli çelik boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73063077": {
+        "name": "Kaplamalı çelik boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73063080": {
+        "name": "Diğer demir/çelik boru flanşları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73064020": {
+        "name": "Paslanmaz çelikten boru bağlantı parçaları (kaynaklı)",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.46,
+        "kaynak": "Excel Import"
+    },
+    "73064080": {
+        "name": "Diğer demir/çelik boru bağlantı parçaları (kaynaklı)",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.33,
+        "kaynak": "Excel Import"
+    },
+    "73065021": {
+        "name": "Paslanmaz çelikten boru vanaları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.41,
+        "kaynak": "Excel Import"
+    },
+    "73065029": {
+        "name": "Diğer alaşımlı çelik boru vanaları (kaynaklı)",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.33,
+        "kaynak": "Excel Import"
+    },
+    "73065080": {
+        "name": "Diğer demir/çelik boru vanaları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.41,
+        "kaynak": "Excel Import"
+    },
+    "73066110": {
+        "name": "Paslanmaz çelikten boru valfleri (kaynaklı)",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.46,
+        "kaynak": "Excel Import"
+    },
+    "73066192": {
+        "name": "Yüksek karbonlu çelik boru valfleri (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73066199": {
+        "name": "Diğer alaşımlı çelik boru valfleri (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73066910": {
+        "name": "Galvanizli çelik boru valfleri (kaynaklı)",
+        "defaultSEEDirect": 1.98,
+        "defaultSEEIndirect": 0.46,
+        "kaynak": "Excel Import"
+    },
+    "73066990": {
+        "name": "Diğer demir/çelik boru valfleri (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73069000": {
+        "name": "Diğer demir/çelik boru elemanları (kaynaklı)",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73071110": {
+        "name": "Paslanmaz çelikten boru bağlantı parçaları (dövme)",
+        "defaultSEEDirect": 2.54,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "73071190": {
+        "name": "Diğer alaşımlı çelik boru bağlantı parçaları (dövme)",
+        "defaultSEEDirect": 2.54,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "73071910": {
+        "name": "Yüksek karbonlu çelik boru bağlantı parçaları (dövme)",
+        "defaultSEEDirect": 2.54,
+        "defaultSEEIndirect": 0.57,
+        "kaynak": "Excel Import"
+    },
+    "73071990": {
+        "name": "Diğer demir/çelik boru bağlantı parçaları (dövme)",
+        "defaultSEEDirect": 0.61,
+        "defaultSEEIndirect": 1.05,
+        "kaynak": "Excel Import"
+    },
+    "73072100": {
+        "name": "Paslanmaz çelikten boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73072210": {
+        "name": "Yüksek karbonlu çelik boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73072290": {
+        "name": "Diğer karbon çelik boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73072310": {
+        "name": "Alaşımlı çelik boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73072390": {
+        "name": "Diğer alaşımlı çelik boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73072910": {
+        "name": "Galvanizli çelik boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73072980": {
+        "name": "Diğer demir/çelik boru flanşları (dövme)",
+        "defaultSEEDirect": 1.87,
+        "defaultSEEIndirect": 0.43,
+        "kaynak": "Excel Import"
+    },
+    "73079100": {
+        "name": "Paslanmaz çelikten boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079210": {
+        "name": "Yüksek karbonlu çelik boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079290": {
+        "name": "Diğer karbon çelik boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079311": {
+        "name": "Alaşımlı çelik boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079319": {
+        "name": "Diğer alaşımlı çelik boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079391": {
+        "name": "Galvanizli çelik boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079399": {
+        "name": "Diğer demir/çelik boru dirsekleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079910": {
+        "name": "Paslanmaz çelikten boru kelepçeleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73079980": {
+        "name": "Diğer demir/çelik boru kelepçeleri (dövme)",
+        "defaultSEEDirect": 1.93,
+        "defaultSEEIndirect": 0.29,
+        "kaynak": "Excel Import"
+    },
+    "73081000": {
+        "name": "Paslanmaz çelikten köprüler",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73082000": {
+        "name": "Yüksek karbonlu çelik köprüler",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73083000": {
+        "name": "Alaşımlı çelik köprüler",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73084000": {
+        "name": "Diğer demir/çelik köprüler",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73089051": {
+        "name": "Paslanmaz çelikten köprü parçaları",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73089059": {
+        "name": "Diğer alaşımlı çelik köprü parçaları",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73089098": {
+        "name": "Diğer demir/çelik köprü parçaları",
+        "defaultSEEDirect": 2.46,
+        "defaultSEEIndirect": 2.55,
+        "kaynak": "Excel Import"
+    },
+    "73090010": {
+        "name": "Demir/çelikten kuleler ve direkler",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73090030": {
+        "name": "Demir/çelikten köprü parçaları",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73090051": {
+        "name": "Paslanmaz çelikten kule ve direk parçaları",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73090059": {
+        "name": "Diğer alaşımlı çelik kule ve direk parçaları",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73090090": {
+        "name": "Diğer demir/çelik yapı elemanları",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73101000": {
+        "name": "Demir/çelikten silindirik tanklar ve depolar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73102111": {
+        "name": "Paslanmaz çelikten basınçlı kaplar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73102119": {
+        "name": "Diğer paslanmaz çelik basınçlı kaplar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73102191": {
+        "name": "Yüksek karbonlu çelik basınçlı kaplar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73102199": {
+        "name": "Diğer karbon çelik basınçlı kaplar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73102910": {
+        "name": "Alaşımlı çelik basınçlı kaplar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73102990": {
+        "name": "Diğer demir/çelik basınçlı kaplar",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "73110011": {
+        "name": "Paslanmaz çelikten gaz silindirleri",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73110013": {
+        "name": "Yüksek karbonlu çelik gaz silindirleri",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73110019": {
+        "name": "Diğer demir/çelik gaz silindirleri",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73110030": {
+        "name": "Demir/çelikten sıvılaştırılmış gaz kapları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73110091": {
+        "name": "Paslanmaz çelikten diğer kaplar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73110099": {
+        "name": "Diğer demir/çelik kaplar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181100": {
+        "name": "Paslanmaz çelikten cıvatalar ve somunlar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181210": {
+        "name": "Yüksek karbonlu çelik cıvatalar",
+        "defaultSEEDirect": 2.1,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "73181290": {
+        "name": "Diğer karbon çelik cıvatalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181300": {
+        "name": "Alaşımlı çelik cıvatalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181410": {
+        "name": "Yüksek karbonlu çelik somunlar",
+        "defaultSEEDirect": 2.1,
+        "defaultSEEIndirect": 1.99,
+        "kaynak": "Excel Import"
+    },
+    "73181491": {
+        "name": "Orta karbonlu çelik somunlar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181499": {
+        "name": "Diğer karbon çelik somunlar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181520": {
+        "name": "Paslanmaz çelikten perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181535": {
+        "name": "Yüksek karbonlu çelik perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181542": {
+        "name": "Orta karbonlu çelik perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181548": {
+        "name": "Düşük karbonlu çelik perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181552": {
+        "name": "Alaşımlı çelik perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181558": {
+        "name": "Galvanizli çelik perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181562": {
+        "name": "Kaplamalı çelik perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181568": {
+        "name": "Demir perçinler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181575": {
+        "name": "Paslanmaz çelikten pimler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181582": {
+        "name": "Yüksek karbonlu çelik pimler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181588": {
+        "name": "Diğer demir/çelik pimler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181595": {
+        "name": "Diğer demir/çelik bağlantı elemanları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181631": {
+        "name": "Paslanmaz çelikten rondelalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181639": {
+        "name": "Diğer alaşımlı çelik rondelalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181640": {
+        "name": "Yüksek karbonlu çelik rondelalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181660": {
+        "name": "Diğer karbon çelik rondelalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181692": {
+        "name": "Galvanizli çelik rondelalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181699": {
+        "name": "Diğer demir/çelik rondelalar",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73181900": {
+        "name": "Diğer demir/çelik bağlantı elemanları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73182100": {
+        "name": "Paslanmaz çelikten zincirler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73182200": {
+        "name": "Yüksek karbonlu çelik zincirler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73182300": {
+        "name": "Alaşımlı çelik zincirler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73182400": {
+        "name": "Galvanizli çelik zincirler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73182900": {
+        "name": "Diğer demir/çelik zincirler",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73261100": {
+        "name": "Paslanmaz çelikten döküm ürünleri",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "73261910": {
+        "name": "Yüksek karbonlu çelik döküm ürünleri",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "73261990": {
+        "name": "Diğer demir/çelik döküm ürünleri",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "73262000": {
+        "name": "Demir/çelikten döküm kalıpları",
+        "defaultSEEDirect": 1.95,
+        "defaultSEEIndirect": 0.51,
+        "kaynak": "Excel Import"
+    },
+    "73269030": {
+        "name": "Paslanmaz çelikten mutfak eşyaları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73269040": {
+        "name": "Alaşımlı çelik mutfak eşyaları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73269050": {
+        "name": "Yüksek karbonlu çelik mutfak eşyaları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73269060": {
+        "name": "Diğer demir/çelik mutfak eşyaları",
+        "defaultSEEDirect": 1.89,
+        "defaultSEEIndirect": 0.32,
+        "kaynak": "Excel Import"
+    },
+    "73269092": {
+        "name": "Paslanmaz çelikten süs eşyaları",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "73269094": {
+        "name": "Alaşımlı çelik süs eşyaları",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "73269096": {
+        "name": "Diğer demir/çelik süs eşyaları",
+        "defaultSEEDirect": 2.65,
+        "defaultSEEIndirect": 0.62,
+        "kaynak": "Excel Import"
+    },
+    "73269098": {
+        "name": "Diğer demir/çelik döküm ürünleri",
+        "defaultSEEDirect": 1.97,
+        "defaultSEEIndirect": 0.39,
+        "kaynak": "Excel Import"
+    },
+    "76011010": {
+        "name": "Alüminyum külçeler (%99.95 ve üzeri saflıkta)",
+        "defaultSEEDirect": 2.36,
+        "defaultSEEIndirect": 8.14,
+        "kaynak": "Excel Import"
+    },
+    "76011090": {
+        "name": "Diğer alüminyum külçeler",
+        "defaultSEEDirect": 2.36,
+        "defaultSEEIndirect": 8.14,
+        "kaynak": "Excel Import"
+    },
+    "76012030": {
+        "name": "Alüminyum çubuklar (dairesel kesitli)",
+        "defaultSEEDirect": 2.36,
+        "defaultSEEIndirect": 8.14,
+        "kaynak": "Excel Import"
+    },
+    "76012040": {
+        "name": "Alüminyum çubuklar (kare veya dikdörtgen kesitli)",
+        "defaultSEEDirect": 2.36,
+        "defaultSEEIndirect": 8.14,
+        "kaynak": "Excel Import"
+    },
+    "76012080": {
+        "name": "Diğer alüminyum çubuklar",
+        "defaultSEEDirect": 2.36,
+        "defaultSEEIndirect": 8.14,
+        "kaynak": "Excel Import"
+    },
+    "76031000": {
+        "name": "Alüminyum tozu",
+        "defaultSEEDirect": 2.48,
+        "defaultSEEIndirect": 8.4,
+        "kaynak": "Excel Import"
+    },
+    "76032000": {
+        "name": "Alüminyum pulları",
+        "defaultSEEDirect": 2.48,
+        "defaultSEEIndirect": 8.4,
+        "kaynak": "Excel Import"
+    },
+    "76041010": {
+        "name": "Saf alüminyum teller",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76041090": {
+        "name": "Alüminyum alaşım telleri",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76042100": {
+        "name": "Alüminyum alaşım çubukları",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76042910": {
+        "name": "Saf alüminyum çubukları",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76042990": {
+        "name": "Diğer alüminyum çubukları",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76051100": {
+        "name": "Saf alüminyum profiller",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76051900": {
+        "name": "Alüminyum alaşım profiller",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76052100": {
+        "name": "Saf alüminyum borular",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76052900": {
+        "name": "Alüminyum alaşım borular",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76061130": {
+        "name": "Alüminyum saclar (kalınlık > 0.2 mm)",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061150": {
+        "name": "Alüminyum saclar (kalınlık ≤ 0.2 mm)",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061191": {
+        "name": "Alüminyum rulo saclar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061193": {
+        "name": "Alüminyum bantlar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061199": {
+        "name": "Diğer alüminyum yassı ürünler",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061211": {
+        "name": "Alüminyum alaşım saclar (kalınlık > 0.2 mm)",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061219": {
+        "name": "Diğer alüminyum alaşım saclar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061230": {
+        "name": "Alüminyum alaşım rulo saclar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061250": {
+        "name": "Alüminyum alaşım bantlar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061292": {
+        "name": "Alüminyum alaşım levhalar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061293": {
+        "name": "Alüminyum alaşım şeritler",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76061299": {
+        "name": "Diğer alüminyum alaşım yassı ürünler",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76069100": {
+        "name": "Alüminyum folyolar (kalınlık ≤ 0.2 mm)",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76069200": {
+        "name": "Alüminyum alaşım folyolar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76071111": {
+        "name": "Saf alüminyum borular (dikişsiz)",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76071119": {
+        "name": "Diğer saf alüminyum borular",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76071190": {
+        "name": "Saf alüminyum boru bağlantı parçaları",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76071910": {
+        "name": "Alüminyum alaşım borular (dikişsiz)",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76071990": {
+        "name": "Diğer alüminyum alaşım borular",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76072010": {
+        "name": "Alüminyum alaşım boru flanşları",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76072091": {
+        "name": "Alüminyum alaşım boru dirsekleri",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76072099": {
+        "name": "Diğer alüminyum alaşım boru bağlantı parçaları",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76081000": {
+        "name": "Alüminyum teller",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76082020": {
+        "name": "Alüminyum örgülü teller",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76082081": {
+        "name": "Alüminyum kablolar",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76082089": {
+        "name": "Diğer alüminyum iletkenler",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76090000": {
+        "name": "Alüminyum kapaklar ve kapak contaları",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76101000": {
+        "name": "Alüminyum kapı ve pencere profilleri",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76109010": {
+        "name": "Alüminyum bina cephe sistemleri",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76109090": {
+        "name": "Diğer alüminyum yapı elemanları",
+        "defaultSEEDirect": 2.73,
+        "defaultSEEIndirect": 9.3,
+        "kaynak": "Excel Import"
+    },
+    "76110000": {
+        "name": "Alüminyum sıvı depolama tankları",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76121000": {
+        "name": "Alüminyum gaz silindirleri",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76129020": {
+        "name": "Alüminyum basınçlı kaplar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76129030": {
+        "name": "Alüminyum ısı eşanjörleri",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76129080": {
+        "name": "Diğer alüminyum kaplar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76130000": {
+        "name": "Alüminyum mutfak eşyaları",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76141000": {
+        "name": "Saf alüminyum telli örgüler",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76149000": {
+        "name": "Alüminyum alaşım telli örgüler",
+        "defaultSEEDirect": 2.31,
+        "defaultSEEIndirect": 7.49,
+        "kaynak": "Excel Import"
+    },
+    "76161000": {
+        "name": "Alüminyum çiviler ve raptiyeler",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76169100": {
+        "name": "Alüminyum cıvatalar ve somunlar",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    },
+    "76169910": {
+        "name": "Alüminyum perçinler",
+        "defaultSEEDirect": 2.48,
+        "defaultSEEIndirect": 8.4,
+        "kaynak": "Excel Import"
+    },
+    "76169990": {
+        "name": "Diğer alüminyum bağlantı elemanları",
+        "defaultSEEDirect": 2.86,
+        "defaultSEEIndirect": 9.25,
+        "kaynak": "Excel Import"
+    }
+}
